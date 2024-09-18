@@ -32,11 +32,11 @@
 
     <!-- -#HEADER -->
 
-    <header class="header" data-header>
+    <header class="header " data-header>
         <div class="header-top">
             <div class="container">
                 <a href="#" class="logo">
-                    <img src="./assets/images/logo.svg" width="238" height="28" alt="Black Night">
+                    <img src="./assets/images/logo.svg" width="138" height="28" alt="Black Night">
                 </a>
 
                 <div class="input-wrapper">
@@ -49,17 +49,61 @@
                         <span class="span">0</span>
                         <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
-                    <button class="header-action-btn" aria-level="open menu" title="Open Menu" data-nav-toggler>
+                    <button class="nav-open-btn" aria-level="open menu" title="Open Menu" data-nav-toggler>
                         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
                     </button>
                     <button class="header-action-btn" aria-level="user" title="User">
                         <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
                     </button>
-                    
-                    <button></button>
                 </div>
             </div>
         </div>
+        <div class="header-bottom " data-navbar>
+
+            <div class="container">
+
+                <div class="navbar">
+
+                    <button class="nav-close-btn" data-nav-toggler aria-label="clsoe menu" title="Close Menu">
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+
+                    <div class="navbar-top">
+                        <input type="search" name="search" placeholder="Search our store" class="input-field">
+
+                        <button class="search-btn" aria-level="Search">
+                            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li>
+                            <a href="#" class="navbar-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-link">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-link">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <a href="tel:+01-234-56789" class="header-contack-link">
+                    <ion-icon name="headset-outline" aria-hidden="true"></ion-icon>
+                    <span class="span">(+01)-234-56789</span>
+                </a>
+
+            </div>
+        </div>
+        <div class="overlay " data-overlay data-nav-toggler></div>
     </header>
 
 
