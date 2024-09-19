@@ -24,6 +24,8 @@
         rel="stylesheet">
 
     <!-- - preload images -->
+    <link rel="preload" href="./assets/images/hero-banner.png">
+    <link rel="preload" href="./assets/images/hero-bg.jpg">
 
 </head>
 
@@ -45,14 +47,14 @@
                 </div>
 
                 <div class="header-action">
-                    <button class="header-action-btn" aria-level="cart" title="Cart">
+                    <button class="header-action-btn" aria-label="cart" title="Cart">
                         <span class="span">0</span>
                         <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
                     </button>
-                    <button class="nav-open-btn" aria-level="open menu" title="Open Menu" data-nav-toggler>
+                    <button class="nav-open-btn" aria-label="open menu" title="Open Menu" data-nav-toggler>
                         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
                     </button>
-                    <button class="header-action-btn" aria-level="user" title="User">
+                    <button class="header-action-btn" aria-label="user" title="User">
                         <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
                     </button>
                 </div>
@@ -71,7 +73,7 @@
                     <div class="navbar-top">
                         <input type="search" name="search" placeholder="Search our store" class="input-field">
 
-                        <button class="search-btn" aria-level="Search">
+                        <button class="search-btn" aria-label="Search">
                             <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
                         </button>
                     </div>
@@ -105,6 +107,43 @@
         </div>
         <div class="overlay " data-overlay data-nav-toggler></div>
     </header>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <article>
+            <!-- -#HERO -->
+
+            <section class="section hero has-bg-image" aria-label="home"
+                style="background-image: url('./assets/images/hero-bg.jpg');">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="h1 hero-title has-after">
+                            Get Your New
+                            Book Collections
+                        </h1>
+                        <p class="hero-text">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some formr.
+                        </p>
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn">
+                                <span class="span">Explore More</span>
+                                <ion-icon name="cart" aria-hidden="true"></ion-icon>
+                            </a>
+                            <button class="play-btn" aria-label="play video">
+                                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+
+                            </button>
+                        </div>
+                    </div>
+                    <figure class="hero-banner">
+                        <img src="./assets/images/hero-banner.png" alt="hero banner" width="475" height="600"
+                            class="w-100">
+                    </figure>
+                </div>
+            </section>
+        </article>
+    </main>
 
 
 
