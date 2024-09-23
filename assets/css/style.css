@@ -148,7 +148,6 @@ body {
   color: var(--white-1);
   font-size: 1.6rem;
   line-height: 1.5;
-  height: 300vh;
 }
 
 :focus-visible {
@@ -180,7 +179,70 @@ body {
   padding-inline: 15px;
 }
 
+.section {
+  padding-block: var(--section-padding);
+}
 
+.has-bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.h1,
+.h2,
+.h3 {
+  font-family: var(--ff-jost);
+  font-weight: var(--fw-500);
+  line-height: 1.25;
+}
+
+.h1 {
+  font-size: var(--fs-1);
+}
+
+.h2 {
+  font-size: var(--fs-2);
+}
+
+.h3 {
+  font-size: var(--fs-6);
+}
+
+.has-before,
+.has-after {
+  position: relative;
+  z-index: 1;
+}
+
+.has-before::before,
+.has-after::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.btn {
+  font-size: var(--fs-7);
+  font-weight: var(--fw--500);
+  max-width: max-content;
+  border: 1px solid var(--white-1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 30px;
+  transition: var(--transition-1);
+  border-radius: var(--radius-pill);
+}
+
+.btn ion-icon {
+  font-size: 16px;
+}
+
+.btn:is(:hover, :focus) {
+  background-color: var(--maximum-blue-green);
+  border-color: var(--maximum-blue-green);
+}
 
 /*-----------------------------------*\
   #HEADER
@@ -188,7 +250,7 @@ body {
 
 
 
-.header-top:is(.input-wrapper, .header-action-btn:last-child),
+.header-top :is(.input-wrapper, .header-action-btn:last-child),
 .header-contack-link {
   display: none;
 }
@@ -241,7 +303,7 @@ body {
   transition: var(--transition-1);
 }
 
-.header-action:is(.header-action-btn, .nav-open-btn):is(:hover, :focus) {
+.header-action :is(.header-action-btn, .nav-open-btn):is(:hover, :focus) {
   color: var(--maximum-blue-green);
 }
 
@@ -331,7 +393,7 @@ body {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) {
+.navbar-link :is(:hover, :focus) {
   color: var(--maximum-blue-green);
 }
 
